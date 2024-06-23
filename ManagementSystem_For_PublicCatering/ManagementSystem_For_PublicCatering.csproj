@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0233778-7265-48D0-8058-236445F3522F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagementSystem_For_PublicCatering</RootNamespace>
+    <AssemblyName>ManagementSystem_For_PublicCatering</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Формы пользователя «Cashier»\PurchaseReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\PurchaseReceipt.Designer.cs">
+      <DependentUpon>PurchaseReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\RemovalOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\RemovalOperations.Designer.cs">
+      <DependentUpon>RemovalOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Системные классы\AddImage.cs" />
+    <Compile Include="Формы пользователя «Cashier»\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы общего назначения\MouseInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы общего назначения\MouseInput.Designer.cs">
+      <DependentUpon>MouseInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Системные классы\ErrorsKods.cs" />
+    <Compile Include="Системные классы\FormSettings.cs" />
+    <Compile Include="Системные классы\SQL.cs" />
+    <Compile Include="Формы общего назначения\ProgramSettingsDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы общего назначения\ProgramSettingsDevice.Designer.cs">
+      <DependentUpon>ProgramSettingsDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы общего назначения\Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы общего назначения\Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\CashRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы пользователя «Cashier»\CashRegister.Designer.cs">
+      <DependentUpon>CashRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Системные классы\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Формы пользователя «Cashier»\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы общего назначения\Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Формы общего назначения\MouseInput.resx">
+      <DependentUpon>MouseInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы общего назначения\ProgramSettingsDevice.resx">
+      <DependentUpon>ProgramSettingsDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы пользователя «Cashier»\CashRegister.resx">
+      <DependentUpon>CashRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkFormBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightFormBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkTouchpad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkTouchpad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightTouchpad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightTouchpad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightCapsLockOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightCapsLockOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightDiscount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightLanguage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightPayment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkCapsLockOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkCapsLockOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkDiscount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkLanguage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkPayment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\MissingPhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\QR_KOD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkPrev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightPrev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightIImageShowOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightIImageShowOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkImageShowOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkImageShowOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightImageShowOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightImageShowOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkEXIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightEXIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Dark\DarkBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Директория изображений\Light\LightBack.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
